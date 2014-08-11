@@ -46,4 +46,21 @@ Visit the application to demonstrate that it is accessible already.
 
 Clone the git repo for the application to your local machine.
 
+## The Merge
+
 ## First Edit
+The first edit is simply to show that we are making changes to a "real"
+environment and not just faking it.
+
+### Edit the config.ru File
+config.ru is the "rackup" file. Ruby applications in OpenShift are rack-based
+applications. What that means is outside of the scope of this demo, but you can
+read more about Ruby/Rack here:
+
+https://rack.github.io/
+
+Edit the config.ru file and simply do a search/replace for "OpenShift" with
+something else, for example, "MyApp".
+
+Sa
+
