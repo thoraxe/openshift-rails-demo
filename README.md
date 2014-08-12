@@ -57,7 +57,7 @@ git fetch github
 git merge github/master
 ```
 
-You will get an error about conflicts. <resolution instructions>
+You will get an error about conflicts. (resolution instructions)
 
 ## First Edit
 The first edit is simply to show that we are making changes to a "real"
@@ -72,3 +72,27 @@ https://rack.github.io/
 
 Edit the config.ru file and simply do a search/replace for "OpenShift" with
 something else, for example, "MyApp".
+
+### Add, Commit, Push
+Now you can add your changes, commit them, and push them up.
+
+```
+git add .
+git commit -m "changed to MyApp"
+git push origin master
+```
+
+Once the push is complete, refresh your application and show that, indeed,
+OpenShift has changed to MyApp.
+
+## Add MySQL
+The next step is to add the MySQL cartridge. We will demonstrate using the RHC
+command for this, instead of doing it through the UI.
+
+```
+rhc cartridge add mysql-5.1 --app railsdemo
+```
+
+## Rails
+The next step is going to be to "switch" to using Ruby/Rails. We can do this by
+checking out a different tag.
