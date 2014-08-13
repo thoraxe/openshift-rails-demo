@@ -46,5 +46,11 @@ gem 'thor', '= 0.14.6'
 
 # This needs to be installed so we can run Rails console on OpenShift directly
 gem 'minitest'
-gem 'rake', '10.0.3'
-gem 'therubyracer'
+
+# my stuff
+gem "therubyracer"
+gem "haml-rails"
+gem "ci_reporter_rspec"
+gem "rake", "10.0.3"
+gem 'rspec-rails', "2.99.0"
+gem 'capybara'
