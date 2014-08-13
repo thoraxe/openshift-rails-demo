@@ -124,7 +124,7 @@ The next step is going to be to "switch" to using Ruby/Rails. We can do this by
 checking out a different tag and then pushing up the new repo.
 
 ### The git Part
-None the less, execute the following:
+Execute the following:
 
 ```
 git merge -Xtheirs v2-base-rails
